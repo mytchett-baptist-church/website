@@ -17,7 +17,8 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
     "nuxt": "~2.2.0",
-    "nuxtdown": "^2.0.3"
+    "nuxtdown": "^2.0.3",
+    "vue-scrollto": "^2.18.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

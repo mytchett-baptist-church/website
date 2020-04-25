@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <nav>
       <ul>
         <li>
@@ -14,6 +14,6 @@
       </ul>
     </nav>
     <nuxt />
-  </div>
+  </div>-->
 </template>
 

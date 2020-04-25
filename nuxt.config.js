@@ -24,7 +24,7 @@ module.exports = {
   },
   css: [
     '@/assets/sass/main.scss',
-    '@/assets/css/main.css'
+    // '@/assets/css/main.css'
   ],
 
   /*
