@@ -1,5 +1,8 @@
 module.exports = {
-  modules: ["nuxtdown"],
+  modules: [
+    "nuxtdown",
+    "vue-scrollto/nuxt"
+  ],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },

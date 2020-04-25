@@ -1,39 +1,5 @@
 <template>
   <main class="landing is-preload">
-    <!-- Header -->
-    <header id="header" class="alt">
-      <h1>
-        <a href="http://www.gu16.org.uk/index.html">ChurchesTogether</a>@GU16
-      </h1>
-      <nav id="nav">
-        <ul>
-          <li>
-            <nuxt-link :to="'/#'">Home</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link :to="'/#'">Events</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link :to="'/#'">About</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link :to="'/#'" class="icon solid fa-angle-down">More</nuxt-link>
-            <ul>
-              <li>
-                <nuxt-link :to="'/#'">Contact</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link :to="'/#'">Revive'n'thrive</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link :to="'/#'">About</nuxt-link>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     <!-- Banner -->
     <section id="banner">
       <h2>Mytchett Baptists</h2>
@@ -44,7 +10,10 @@
       </p>
       <ul class="actions special">
         <li>
-          <nuxt-link :to="'/#'" class="button">Learn More</nuxt-link>
+          <a v-scroll-to="'#cta'" class="button">Contact</a>
+        </li>
+        <li>
+          <a v-scroll-to="'#more'" class="button">Learn More</a>
         </li>
       </ul>
     </section>
@@ -61,29 +30,37 @@
         </span>
       </section>
 
-      <section class="box special features">
+      <section class="box special features" id="more">
         <div class="features-row">
           <section>
-            <span class="icon solid major fa-bolt accent2"></span>
-            <h3>About Jesus</h3>
-            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <nuxt-link :to="'/about-jesus'">
+              <span class="icon solid major fa-cross accent2"></span>
+              <h3>About Jesus</h3>
+              <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            </nuxt-link>
           </section>
           <section>
-            <span class="icon solid major fa-chart-area accent3"></span>
-            <h3>About us</h3>
-            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <nuxt-link :to="'/about'">
+              <span class="icon solid major fa-user accent3"></span>
+              <h3>About us</h3>
+              <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            </nuxt-link>
           </section>
         </div>
         <div class="features-row">
           <section>
-            <span class="icon solid major fa-cloud accent4"></span>
-            <h3>Our events</h3>
-            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <nuxt-link :to="'/events'">
+              <span class="icon solid major fa-calendar accent4"></span>
+              <h3>Our events</h3>
+              <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            </nuxt-link>
           </section>
           <section>
-            <span class="icon solid major fa-lock accent5"></span>
-            <h3>Revive'n'thrive</h3>
-            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <span class="icon solid major fa-wrench accent5"></span>
+            <nuxt-link :to="'/revivivess'">
+              <h3>Revive'n'thrive</h3>
+              <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            </nuxt-link>
           </section>
         </div>
       </section>
@@ -123,28 +100,17 @@
     <!-- CTA -->
     <section id="cta">
       <h2>Contact us</h2>
-      <em>We would love to hear from you!</em>
       <!-- todo change email -->
       <form action="https://formspree.io/mgelgjqp" method="POST">
-        Your email:
-        <input type="text" name="_replyto" />
-        Your message:
-        <textarea name="message"></textarea>
+        <input type="email" name="_replyto" id="email" placeholder="Email Address" />
+        <br />
+        <textarea name="message" placeholder="Your message"></textarea>
         <br />
         <!-- your other form fields go here -->
         <a type="submit" class="button">Send</a>
       </form>
     </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-      &copy; Mytchett Baptists. All rights reserved.
-      &nbsp;
-      Design:
-      <a
-        href="http://html5up.net"
-      >HTML5 UP</a>
-    </footer>
   </main>
 </template>
 
