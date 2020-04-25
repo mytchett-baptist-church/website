@@ -44,16 +44,15 @@ collections:
               required: true,
             }
           - { label: Content, name: body, widget: markdown }
-
-      - label: "Page 3"
-        name: "page-3"
-        file: "content/pages/page-3.md"
-        fields:
-          - { label: Title, name: title, widget: string, required: true }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: true,
-            }
-          - { label: Content, name: body, widget: markdown }
+      # - label: "Page 3"
+      #   name: "page-3"
+      #   file: "content/pages/page-3.md"
+      #   fields:
+      #     - { label: Title, name: title, widget: string, required: true }
+      #     - {
+      #         label: Description,
+      #         name: description,
+      #         widget: text,
+      #         required: true,
+      #       }
+      #     - { label: Content, name: body, widget: markdown }
