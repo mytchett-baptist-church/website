@@ -10,14 +10,14 @@ module.exports = {
     htmlAttrs: {
       lang: 'en',
     },
-    title: "My Website",
+    title: "Mychett Baptist Church",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Welcome to my website."
+        content: "Welcome to our website!"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
