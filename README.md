@@ -1,6 +1,6 @@
 # mbc
 
-> Offical Mychett Baptist Church Homepage where you can access upcoming events and view information about the church
+> Offical Mytchett Baptist Church Homepage where you can access upcoming events and view information about the church
 
 ## Build Setup
 

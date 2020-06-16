@@ -1,7 +1,7 @@
 {
   "name": "mbc",
   "version": "1.0.0",
-  "description": "Offical Mychett Baptist Church Homepage where you can access upcoming events and view information about the church",
+  "description": "Offical Mytchett Baptist Church Homepage where you can access upcoming events and view information about the church",
   "author": "Henry <zfac023@live.rhul.ac.uk>",
   "private": true,
   "scripts": {
@@ -16,9 +16,10 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
-    "nuxt": "~2.2.0",
+    "nuxt": "^2.12.2",
     "nuxtdown": "^2.0.3",
-    "vue-scrollto": "^2.18.1"
+    "vue-scrollto": "^2.18.1",
+    "vue-sidebar-menu": "^4.5.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -28,7 +29,7 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
     "glob": "^7.1.2",
-    "node-sass": "^4.14.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2"
   }
 }

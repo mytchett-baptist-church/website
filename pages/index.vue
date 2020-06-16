@@ -2,64 +2,67 @@
   <main class="landing is-preload">
     <!-- Banner -->
     <section id="banner">
-      <h2>Mytchett Baptists</h2>
-      <p>
-        <i class="fas fa-cross"></i>
-        10:00 am every Sunday
-        <i class="fas fa-cross"></i>
-      </p>
-      <ul class="actions special">
-        <li>
-          <a v-scroll-to="'#cta'" class="button">Contact</a>
-        </li>
-        <li>
-          <a v-scroll-to="'#more'" class="button">Learn More</a>
-        </li>
-      </ul>
+      <div style="position: relative; top: 50%; transform: perspective(1px) translateY(-50%);">
+        <h2>Mytchett Baptists</h2>
+        <p>
+          <i class="fas fa-cross"></i>
+          <i>&nbsp;10:00 am every Sunday &nbsp;</i>
+          <i class="fas fa-cross"></i>
+        </p>
+        <ul class="actions special">
+          <li>
+            <a v-scroll-to="'#cta'" class="button">Contact</a>
+          </li>
+          <li>
+            <a v-scroll-to="'#more'" class="button">Learn More</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Main -->
     <section id="main" class="container">
-      <section class="box special" style="margin-top: -26%">
+      <section class="box special">
         <header class="major">
           <h2>ALL ARE WELCOME!</h2>
-          <p>We have ‘open membership’. This means that, although the preferred induction to membership, as in any Baptist Church, is by Believer’s Baptism, we also welcome others on ‘profession of faith’ in the Lord Jesus Christ.</p>
+          <p>
+            We have
+            <i>‘open membership’</i> and welcome all profession of faith in the Lord Jesus Christ.
+            <br /> As a Baptist Church and Baptism is our prefered induction yet this is entirely up to you.
+          </p>
         </header>
-        <span class="image featured">
-          <img src="images/pic01.jpg" alt />
-        </span>
       </section>
 
       <section class="box special features" id="more">
         <div class="features-row">
           <section>
-            <nuxt-link :to="'/about-jesus'">
-              <span class="icon solid major fa-cross accent2"></span>
-              <h3>About Jesus</h3>
-              <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+            <span class="icon solid major fa-cross accent2"></span>
+            <nuxt-link :to="'/find-jesus'" class>
+              <h3>Find Jesus</h3>
+              <h4>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</h4>
             </nuxt-link>
           </section>
           <section>
+            <span class="icon solid major fa-user accent3"></span>
             <nuxt-link :to="'/about'">
-              <span class="icon solid major fa-user accent3"></span>
               <h3>About us</h3>
-              <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+              <h4>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</h4>
             </nuxt-link>
           </section>
         </div>
         <div class="features-row">
           <section>
-            <nuxt-link :to="'/events'">
-              <span class="icon solid major fa-calendar accent4"></span>
+            <span class="icon solid major fa-calendar accent4"></span>
+            <nuxt-link :to="'/events'" class="primary">
               <h3>Our events</h3>
-              <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+              <h4>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</h4>
             </nuxt-link>
           </section>
           <section>
             <span class="icon solid major fa-wrench accent5"></span>
-            <nuxt-link :to="'/revivivess'">
+            <nuxt-link :to="'/revive'">
               <h3>Revive'n'thrive</h3>
-              <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+              <h4>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</h4>
             </nuxt-link>
           </section>
         </div>
@@ -68,9 +71,6 @@
       <div class="row">
         <div class="col-6 col-12-narrower">
           <section class="box special">
-            <span class="image featured">
-              <img src="images/pic02.jpg" alt />
-            </span>
             <h3>I'm new</h3>
             <p>A warm welcome to you! No need to feel out of place you are at home here.</p>
             <ul class="actions special">
@@ -82,9 +82,6 @@
         </div>
         <div class="col-6 col-12-narrower">
           <section class="box special">
-            <span class="image featured">
-              <img src="images/pic03.jpg" alt />
-            </span>
             <h3>What we have been getting up to?</h3>
             <p>We have newsletters and a blog where we record special events in our community.</p>
             <ul class="actions special">
@@ -110,7 +107,6 @@
         <a type="submit" class="button">Send</a>
       </form>
     </section>
-
   </main>
 </template>
 

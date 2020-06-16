@@ -1,8 +1,13 @@
 module.exports = {
   modules: [
     "nuxtdown",
-    "vue-scrollto/nuxt"
+    "vue-scrollto/nuxt",
   ],
+  // nuxt-config.js
+  plugins: [
+    { src: '~/plugins/vue-sidebar-menu.js', ssr: false }
+  ],
+
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },
@@ -13,7 +18,7 @@ module.exports = {
     htmlAttrs: {
       lang: 'en',
     },
-    title: "Mychett Baptist Church",
+    title: "Mytchett Baptist Church",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
