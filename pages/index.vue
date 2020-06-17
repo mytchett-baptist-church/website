@@ -111,5 +111,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+   asyncData: async ({ app, route, payload }) => {
+    return {
+      page: (await app.$content("/pages").get(route.path)) || payload
+    };
+  }
+};
 </script>
