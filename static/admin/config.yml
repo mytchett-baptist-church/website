@@ -45,10 +45,10 @@ collections:
               required: true,
             }
           - { label: Content, name: body, widget: markdown }
-          
+
   - label: "Homepage"
     name: "Homepage"
-    file: "content/home/home.md"
+    folder: "content/home/"
     fields:
       - { label: Title, name: title, widget: string, required: true }
       - {
