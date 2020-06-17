@@ -58,3 +58,7 @@ collections:
           required: true,
         }
       - { label: Content, name: body, widget: markdown }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Featured Image", name: "banner", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+

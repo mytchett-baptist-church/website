@@ -1,7 +1,8 @@
 <template>
   <main class="landing is-preload">
     <!-- Banner -->
-    <section id="banner">
+    <section id="banner" :style="{ backgroundImage: `url('../images/overlay.png'), url('..${homepage.banner}')` }">
+      <!-- :style="{background-image: url('../assets/css/images/overlay.png'), url('../images/uploads/banner.jpg') } -->
       <div style="position: relative; top: 50%; transform: perspective(1px) translateY(-50%);">
         <h2>Mytchett Baptists</h2>
         <p>
@@ -25,8 +26,11 @@
       <section class="box special">
         <header class="major">
           <h2>ALL ARE WELCOME!</h2>
+          <!-- <div>
+            <nuxtdown-body class="body" :body="homepage.title"/>
+         </div> -->
           <p>
-            We have
+            We have 
             <i>‘open membership’</i> and welcome all profession of faith in the Lord Jesus Christ.
             <br /> As a Baptist Church and Baptism is our prefered induction yet this is entirely up to you.
           </p>
@@ -111,11 +115,22 @@
 </template>
 
 <script>
-export default {
-
+export default { 
+    head: function() {
+    return {
+      title: `${this.homepage.title}`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.homepage.description
+        }
+      ]
+    };
+  },
    asyncData: async ({ app, route, payload }) => {
     return {
-      page: (await app.$content("/pages").get(route.path)) || payload
+      homepage: (await app.$content("/home").get('home')) || payload
     };
   }
 };
